@@ -1,4 +1,6 @@
-weddingsite.github.io
-=====================
+Hay que instalar a mano zlib
 
-Our wedding website! The template is Big Picture by HTML5 Up (http://html5up.net). [Click here to see it live!](http://jasonandali.aretotallygettingmarried.com).
+sudo apt-get install zlib1g-dev
+
+https://github.com/flapjack/omnibus-flapjack/issues/72
+
