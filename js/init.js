@@ -294,7 +294,7 @@
 					$window
 						.trigger('resize')
 						.trigger('scroll');
-				});
+				});				
 
 		});
 
