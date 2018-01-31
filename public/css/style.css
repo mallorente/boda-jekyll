@@ -7,10 +7,38 @@
 @import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
 @import url(https://fonts.googleapis.com/css?family=Sofia);
 @import url(https://fonts.googleapis.com/css?family=Qwigley);
-@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+
+/**
+Styles for landing page
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Fugaz+One|Lobster+Two|Shrikhand|Ubuntu');
+
+
 
 
 @font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+
+/**********************/
+/* Main color palletes */
+/**********************/
+
+:root {
+	--main-color:#5d5485;
+	--main-dark: #240915;
+	--main-pink: #d96784;
+	--main-orange: #ed948b;
+	--main-yellow: #fdd892;
+
+	--alt-color: #bfb6cd;
+	--alt-dark: #5a4153;
+	--alt-green: #8da35e;
+	--alt-green-pale: #bdcab3;
+	--alt-pale: #edead7;
+
+}
+
 
 /*********************************************************************************/
 /* Basic                                                                         */
@@ -18,10 +46,6 @@
 
 	.typewriter, h2 {
 		font-family: 'Cutive', serif;
-		font-weight: 400;
-	}
-	.save{
-		font-family: 'Lily Script One', cursive;
 		font-weight: 400;
 	}
 	.fancy {
@@ -40,7 +64,7 @@
 	.and{
 		font-family: 'Qwigley';
 		font-weight: 400;
-	}
+	}			
 	.monospace {
 		font-family: 'Cutive', serif;
 		font-weight: 400;
@@ -79,13 +103,38 @@
 		font-size: 50pt;
 	}
 	
-	#save .save{
-		font-size: 85pt;
-		color: darkorchid
+	#save .title{
+		font-family: 'Comfortaa';
+		color: var(--main-color);
 	}
 
+	#save .sub-title{
+		font-family: 'Ubuntu';
+		color: var(--main-orange);
+	}
+
+	#save .content{
+		font-family: 'Ubuntu';
+		padding-top: 5px;
+		font-size: 22px;
+		color: var(--main-color);
+	}
+
+	#save .head{		
+		text-align: justify;
+	}
+
+	#save .img{
+		display: inline-block;
+			width: 100px;
+			height: 100px;
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}		
+
 	.shadow {
-		text-shadow: 0px 0px 0px #000;
+		text-shadow: 1px 0px 0px rgba(71, 71, 71, 0.274);
 	}
 	.mobile_only {
 		display: none;
@@ -113,6 +162,7 @@
 
 	body {
 		background: #fff;
+		background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 	}
 
 		body.loading {
@@ -677,6 +727,18 @@
 					background: #A399BD;
 				}
 
+		.save-main {
+			position: relative;
+			margin: 0;
+			overflow-x: hidden;			
+			}
+			.save-main.style1{
+				text-align: center;
+				padding: 1em 0 6em 0;
+				position: relative;
+				top: 0%
+			}
+
 	/* Dark */
 
 		.dark {
@@ -1141,9 +1203,9 @@
 		line-height: 3em;
 		box-shadow: 0 0 0em 0 rgba(0,0,0,0.1);
 	}
-
+	
 	body {
-		padding-top: 3em;
+		padding-top: 0em;
 	}
 
 	#logo {
@@ -1192,21 +1254,27 @@
 /*********************************************************************************/
 
 	#intro {
+		padding-top: 3em;
 		background: url('images/overlay.png'), url('../images/intro.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position-x: 50%;
-		background-position: -30%, 0%;
+		background-position: 0%, 30%;
 		background-repeat: repeat, no-repeat;
 	}
 
-	#save{
-		background: url('images/overlay.png'), url('../images/intro.jpg');
-		background-size: 128px 128px, cover;
+	#save {
+		/* background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%); */
+		/*
+		background: #D3CCE3;  /* fallback for old browsers */
+		/*
+		background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+		/* background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		
+		/* background: url('images/overlay.png'), url('../images/intro.jpg');
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		/* background-position-x: 50%; */
-		background-position: -30%, 0%;
-		background-repeat: repeat, no-repeat;
+		background-position: 0%, 30%;
+		background-repeat: repeat, no-repeat; */
 	}
 
 /*********************************************************************************/
@@ -1709,7 +1777,7 @@ h1{
 
 #clockdiv{
 	font-family: sans-serif;
-	color: rgb(124, 11, 11);
+	color: var(--main-color);
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
@@ -1719,19 +1787,52 @@ h1{
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
- 	background: #00BF96;
+ 	background: #24091502;
  	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
- 	background: #00816A; 
+ 	background: #24091502
 	display: inline-block;
 }
 
 .smalltext{
 	padding-top: 5px;
 	font-size: 16px;
-	color: #000
+	color: var(--main-orange)
+}
+
+.column {
+    float: left;
+    /* width: 33.33%; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left,.right {
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	padding-top: 5em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.middle {
+    width: 40%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }

@@ -1,0 +1,35 @@
+[debug] [2018-01-31T07:09:32.062Z] ----------------------------------------------------------------------
+[debug] [2018-01-31T07:09:32.064Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-31T07:09:32.064Z] CLI Version:   3.17.3
+[debug] [2018-01-31T07:09:32.064Z] Platform:      linux
+[debug] [2018-01-31T07:09:32.064Z] Node Version:  v9.4.0
+[debug] [2018-01-31T07:09:32.064Z] Time:          Wed Jan 31 2018 08:09:32 GMT+0100 (STD)
+[debug] [2018-01-31T07:09:32.064Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-31T07:09:32.076Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-31T07:09:32.077Z] > authorizing via signed-in user
+[debug] [2018-01-31T07:09:32.078Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-31T07:09:32.079Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/MT7JoNPkqqx4A-gvlJ1-p2-1AucOwuft5c9lBEGAeK4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jan 31 2018 08:09:32 GMT+0100 (STD)
+[debug] [2018-01-31T07:09:32.655Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-31T07:09:32.746Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/boda-site  
+  
+ Wed Jan 31 2018 08:09:32 GMT+0100 (STD)
+[debug] [2018-01-31T07:09:34.196Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-31T07:09:34.196Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/boda-site/tokens  
+  
+ Wed Jan 31 2018 08:09:34 GMT+0100 (STD)
+[debug] [2018-01-31T07:09:34.853Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'boda-site'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-01-31T07:10:01.733Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/boda-site/uploads/-L4A29aX8KZ6eGKdrEuG?fileCount=141&message=  
+  
+ Wed Jan 31 2018 08:10:01 GMT+0100 (STD)
