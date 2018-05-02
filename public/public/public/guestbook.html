@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Guestbook | ¡Ana y Miguel se casan!</title>
+		<link rel="apple-touch-icon-precomposed" href="images/ios-icon.png"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="La boda de Ana y Miguel" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+			<link rel="stylesheet" href="assets/css/styles.css" />
+			<link rel="stylesheet" href="assets/countdown/jquery.countdown.css" />
+		</noscript>
+		<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+
+			<header id="header">
+
+				<!-- Logo -->
+				<h1 id="logo"><a href="/index.html">
+					<span >
+							<img src="images/logoboda3.png" alt="logo boda claro" width=109 height=71>
+
+
+					<!-- <span class="monospace">Ana</span> <span class="fancy">& Miguel</span> -->
+					</span>
+				</a></h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="/index.html">Inicio</a></li>
+							<li><a href="/rsvp.html">Confirmación</a></li>
+							<li><a href="/engagement_photos.html">Algunas fotos</a></li>
+							<li><a href="/ceremony.html">Ceremonia</a></li>
+							<li><a href="/registry.html">Regalos</a></li>
+							<li><a href="/guestbook.html">Déjanos un mensaje</a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+			<section id="mobile_bar" class="main style1 dark mobile_only">
+				<div class="content container small">
+					<a href="/index.html">Inicio</a>
+					<a href="/rsvp.html">Confirmación</a>
+					<a href="/engagement_photos.html">Algunas fotos</a>
+					<a href="/ceremony.html">Ceremonia</a>
+					<a href="/registry.html">Regalos</a>
+					<a href="/guestbook.html">Déjanos un mensaje</a>
+				</div>
+			</section>
+		
+
+		<!-- Guestbook -->
+			<section id="guestbook" class="main style3 primary">
+				<div class="content container">
+<!-- customize labels of htmlcommentbox.com -->
+<script>
+// This code goes ABOVE the main HTML Comment Box code!
+// replace the text in the single quotes below to customize labels.
+hcb_user = {
+    //L10N
+    comments_header : '<header style="text-align: center;"><h2>Libro de visitas</h2></header><p>Gracias por venir. Puedes dejarnos cualquier comentario, deseo...¡incluso si quieres que una canción suene en la fiesta!</p>',
+    name_label : 'Nombre',
+    content_label: '¡Déjanos un mensaje!',
+    submit : 'Publicar (quizás debas refrescar la página para ver el mensaje)',
+    logout_link : '<img title="log out" src="//www.htmlcommentbox.com/static/images/door_out.png" alt="[logout]" class="hcb-icon"/>',
+    admin_link : '<img src="//www.htmlcommentbox.com/static/images/door_in.png" alt="[login]" class="hcb-icon"/>',
+    no_comments_msg: 'Aún no tenemos ningún mensaje! Sé el primero',
+    add:'Añade tu nota',
+    again: 'Pon otra nota',
+    rss:'<img src="//www.htmlcommentbox.com/static/images/feed.png" class="hcb-icon" alt="rss"/> ',
+    said:'dijo:',
+    prev_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+    next_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+    showing:'Mostrando',
+    to:'a',
+    website_label:'website (optional)',
+    email_label:'correo',
+    anonymous:'Anónimo',
+    mod_label:'(mod)',
+    subscribe:'reenviame las respuestas',
+    are_you_sure:'¿Quieres marcarlo como inapropiado?',
+    
+    reply:'<img src="//www.htmlcommentbox.com/static/images/reply.png"/> reply',
+    flag:'<img src="//www.htmlcommentbox.com/static/images/flag.png"/> flag',
+    like:'<img src="//www.htmlcommentbox.com/static/images/like.png"/> like',
+    
+    //dates
+    days_ago:'days ago',
+    hours_ago:'hours ago',
+    minutes_ago:'minutes ago',
+    within_the_last_minute:'within the last minute',
+
+    msg_thankyou:'¡Gracias por escribirnos!',
+    msg_approval:'(este comentario no será publicado hasta que no sea aprobado)',
+    msg_approval_required:'¡Gracias por comentar! En cuanto comprobemos que no es spam, publicaremos tu comentario',
+    
+    err_bad_html:'Tu comentario contiene errores de html.',
+    err_bad_email:'Por favor, pon una dirección válida.',
+    err_too_frequent:'tienes que esperar unos segundos para poder volver a publicar.',
+    err_comment_empty:'No se ha publicado tu comentario porque estaba vacío',
+    err_denied:'Tu comentario no fue aceptado',
+
+    //SETTINGS
+    MAX_CHARS: 4096,
+    PAGE:'boda.anaymiguel.com', // ID of the webpage to show comments for. defaults to the webpage the user is currently visiting.
+    RELATIVE_DATES:true // show dates in the form "X hours ago." etc.
+};
+</script>
+<!-- done customizing labels of htmlcommentbox.com -->
+
+<!-- begin wwww.htmlcommentbox.com -->
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24f.6v1YpFwBeYPKdYkJGjv%2F"+"&opts=16862&num=10&ts=1516642550643");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+				</div>
+			</section>
+			
+<!-- Footer -->
+			<footer id="footer">
+			
+				<!--
+				     Social Icons
+				     
+				     Use anything from here: http://fortawesome.github.io/Font-Awesome/cheatsheet/)
+				-->
+					<ul class="actions">
+						<li><a href="https://github.com/jbiatek/weddingsite" class="fa solo fa-github"><span>GitHub</span></a></li>
+						<li><a href="#" class="fa solo fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa solo fa-flickr"><span>Flickr</span></a></li>
+						<li><a href="#" class="fa solo fa-pinterest"><span>Pinterest</span></a></li>
+						<li><a href="#" class="fa solo fa-instagram"><span>Instagram Hashtag</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+					<li>&copy; Miguel A. Llorente &amp; Ana Delgado</li>
+						<li>Diseño: <a href="http://html5up.net/">HTML5 UP</a> y Jason Biatek</li>
+						<li>Fotografías: <a href="https://www.flickr.com/photos/janckera/">@janckera</a>, <a href="http://www.rubensolaz.com/">Ruben Solaz</a> y Miguel A. Llorente</li>
+					</ul>
+			
+			</footer>
+	</body>
+</html>
+
+
+

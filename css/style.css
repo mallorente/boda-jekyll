@@ -78,25 +78,76 @@ Styles for landing page
 		font-size: 13pt;
 	}
 
-	#intro .fancy {
-		font-size: 80pt;
-	}
-	#intro .miguel {
-		font-size: 85pt;
-		color: darkorchid
+
+	@media (max-width: 480px){
+
+		#intro .fancy {
+			font-size: 35pt;
+		}
+		#intro .miguel {
+			font-size: 25pt;
+			color: var(--main-orange)
+		}
+	
+		#intro .ana {
+			font-size: 30pt;
+			color: var(--main-orange)
+		}
+	
+		#intro .and {
+			font-size: 45pt;
+			color:var(--alt-color)
+		}
+
 	}
 
-	#intro .ana {
-		font-size: 100pt;
-		color: darkorchid
+	
+	@media (max-width: 600px){
+
+		#intro .fancy {
+			font-size: 80pt;
+		}
+		#intro .miguel {
+			font-size: 85pt;
+			color: var(--main-orange)
+		}
+	
+		#intro .ana {
+			font-size: 100pt;
+			color: var(--main-orange)
+		}
+	
+		#intro .and {
+			font-size: 150pt;
+			color:var(--alt-color)
+		}
+
 	}
 
-	#intro .and {
-		font-size: 150pt;
-		color:darkorange
-	}
+
+		#intro .fancy {
+			font-size: 1em;
+		}
+		#intro .miguel {
+			font-size: 1em;
+			color: var(--main-orange)
+		}
+	
+		#intro .ana {
+			font-size: 1.1em;
+			color: var(--main-orange)
+		}
+	
+		#intro .and {
+			font-size: 1.5em;
+			color:var(--alt-color)
+		}
+
+
+
+
 	#intro .typewriter {
-		font-size: 22pt;		
+		font-size: 1em;		
 	}
 
 	#intro .monospace {
@@ -734,7 +785,7 @@ Styles for landing page
 			}
 			.save-main.style1{
 				text-align: center;
-				padding: 1em 0 6em 0;
+				padding: 0em 0 3em 0;
 				position: relative;
 				top: 0%
 			}
@@ -1255,12 +1306,13 @@ Styles for landing page
 
 	#intro {
 		padding-top: 3em;
-		background: url('images/overlay.png'), url('../images/intro.jpg');
+		background: url('images/overlay.png'), url('../images/intro_blurred.jpg');		
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: 0%, 30%;
 		background-repeat: repeat, no-repeat;
 	}
+
 
 	#save {
 		/* background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%); */
@@ -1835,4 +1887,19 @@ h1{
     .column {
         width: 100%;
     }
+}
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
