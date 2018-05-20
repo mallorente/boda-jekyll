@@ -129,17 +129,17 @@ Styles for landing page
 			font-size: 1em;
 		}
 		#intro .miguel {
-			font-size: 1em;
+			font-size: 1.3em;
 			color: var(--main-orange)
 		}
 	
 		#intro .ana {
-			font-size: 1.1em;
+			font-size: 1.43em;
 			color: var(--main-orange)
 		}
 	
 		#intro .and {
-			font-size: 1.5em;
+			font-size: 1.7em;
 			color:var(--alt-color)
 		}
 
@@ -147,7 +147,7 @@ Styles for landing page
 
 
 	#intro .typewriter {
-		font-size: 1em;		
+		font-size: 1.7em;		
 	}
 
 	#intro .monospace {
@@ -1440,7 +1440,28 @@ Styles for landing page
 		background-position: top left, center center;
 	}
 
+/*********************************************************************************/
+/* Alojamiento section                                                           */
+/*********************************************************************************/
 
+#ceremony {
+	background: url('images/overlay.png'), url('../images/casco-antiguo-cehegin-blur.png');
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+/*********************************************************************************/
+/* Alojamiento main page section                                                 */
+/*********************************************************************************/
+
+#ceremony_main {
+	background: url('images/overlay.png'), url('../images/casco-antiguo-cehegin-blur.png');
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+	
 
 
 /*********************************************************************************/
