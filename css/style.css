@@ -1444,7 +1444,7 @@ Styles for landing page
 /* Alojamiento section                                                           */
 /*********************************************************************************/
 
-#ceremony {
+#alojamiento {
 	background: url('images/overlay.png'), url('../images/casco-antiguo-cehegin-blur.png');
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
@@ -1455,7 +1455,7 @@ Styles for landing page
 /* Alojamiento main page section                                                 */
 /*********************************************************************************/
 
-#ceremony_main {
+#alojamiento_main {
 	background: url('images/overlay.png'), url('../images/casco-antiguo-cehegin-blur.png');
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
